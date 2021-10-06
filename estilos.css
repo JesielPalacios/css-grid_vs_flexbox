@@ -73,17 +73,17 @@ body {
   height: 100%;
 
   /* * Flexbox */
-  /* display: flex;
+  display: flex;
 	flex-direction: column;
-	justify-content: space-between;	 */
+	justify-content: space-between;	
 
   /* * Grid */
-  display: grid;
+  /* display: grid; */
   /* grid-template-columns: repeat(3, 1fr); */
   /* grid-template-rows: repeat(3, 1fr); */
   /* grid-template-rows: repeat(1fr 1fr); */
   /* grid-template-rows: repeat(1fr auto); Esto no hace nada*/
-  grid-template-rows: 1fr auto;
+  /* grid-template-rows: 1fr auto; */
 }
 
 .banner {
@@ -94,16 +94,16 @@ body {
   background-position: center center;
 
   /* *Flexbox */
-  /* width: 30%;
+  /* width: 30%; */
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;	 */
+	justify-content: space-between;	
 
 
 	  /* * Grid */
-  display: grid;
-  grid-template-rows: auto auto auto;
-  align-items: center;
+  /* display: grid; */
+  /* grid-template-rows: auto auto auto; */
+  /* align-items: center; */
 }
 
 .banner ul {
