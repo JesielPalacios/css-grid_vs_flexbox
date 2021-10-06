@@ -16,6 +16,10 @@ body {
 	margin: auto;
 	padding: 40px 0;
 
+	/* *Flexbox */
+	display: flex; /* * uso de Flexbox */
+	gap: 20px; /*  * Hace que los elementos tengan un espaciado entre ellos.*/
+
 	
 }
 
@@ -25,7 +29,12 @@ body {
 }
 
 .contenedor-conciertos {
-	
+	/* *Flexbox */
+	width: 70%;
+	display: flex;
+	/* width: 33.33%; */
+	flex-wrap: wrap; /*  * Facilita el tamaño individual en vez de usar porcentajes haciendo que los elementos se posicionen uno al lado del otro.*/
+	gap: 20px;
 }
 
 .card {
@@ -38,13 +47,21 @@ body {
 	background-size: cover;
 	background-position: center center;
 
-	
+	/* * Flexbox */
+	/* width: calc(33.33% - 12px); */
+		width: calc(33.33% - 20px);/* Al usar Flexbox para crear la estructura se hace necesario calcular el espacio entre los elementos. */	
 }
 
 .card .textos {
+	/* *height: 100%; */
+	/* * Se hace necesario de que la caja tenga un ancho del 100% para que los textos tengan un espacio en el cual distribuirse*/
 	height: 100%;
 	
-	
+
+	/* * Flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;	
 }
 
 .banner {
@@ -53,6 +70,12 @@ body {
 	padding: 20px;
 	background-size: cover;
 	background-position: center center;
+
+	/* *Flexbox */
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;	
 
 
 }
