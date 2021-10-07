@@ -21,5 +21,7 @@ Con 700px:
 Con 600px:
 ![Imágen de cómo se ve cuando tienen 600px en la pantalla](https://github.com/JesielPalacios/css-grid_vs_flexbox/blob/main/img/600.png)
 
-* [Para más información haga click aquí:][website] ! https://www.youtube.com/watch?v=6qko7Nbe8YA&list=PLxKwsmCh0LszfursGLQbBoIoWvkGCLrqL&index=11
+* [Para más información haga click aquí:][website] 
+
 [website]: https://www.youtube.com/watch?v=6qko7Nbe8YA&list=PLxKwsmCh0LszfursGLQbBoIoWvkGCLrqL&index=11
+! https://www.youtube.com/watch?v=6qko7Nbe8YA&list=PLxKwsmCh0LszfursGLQbBoIoWvkGCLrqL&index=11
