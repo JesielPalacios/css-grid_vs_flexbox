@@ -9,7 +9,6 @@ body {
   color: #fff;
   font-family: 'Roboto', sans-serif;
 
-  /* Practica: Se debe poder centrar todo el contenido del elemento contenedor para que quede en el centro de la página. */
   min-height: 100vh;
   display: flex;
 }
@@ -20,18 +19,8 @@ body {
   margin: auto;
   padding: 40px 0;
 
-  /* *Flexbox */
-  /* display: flex; */
-  /* * uso de Flexbox */
-  /* gap: 20px; */
-  /*  * Hace que los elementos tengan un espaciado entre ellos.*/
-
-  /* * Grid */
   display: grid;
-  /* grid-template-columns: 1fr 1fr; */
-  /* grid-template-columns: 1fr auto; */
   grid-template-columns: 3fr 1fr;
-  /* * Recomendación: Usar css-grid para realizar la esctructura (filas, columnas, grilla) de la página y flexbox para alinear elementos (elementos y espaciado de cajas dentro de esos elementos) */
   gap: 20px;
 }
 
@@ -41,15 +30,6 @@ body {
 }
 
 .contenedor-conciertos {
-  /* *Flexbox */
-  /* width: 70%; */
-  /* display: flex; */
-  /*/* width: 33.33%; **/
-  /* flex-wrap: wrap; */
-  /*  * flex-wrap: wrap; facilita el tamaño individual en vez de usar porcentajes haciendo que los elementos se posicionen uno al lado del otro.*/
-  /* gap: 20px; */
-
-  /* * Grid */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -64,30 +44,14 @@ body {
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-
-  /* * Flexbox */
-  /* width: calc(33.33% - 12px); */
-  /* width: calc(33.33% - 20px); */
-  /* Al usar Flexbox para crear la estructura se hace necesario calcular el espacio entre los elementos. */
 }
 
 .card .textos {
-  /* *height: 100%; */
-  /* * Se hace necesario de que la caja tenga un ancho del 100% para que los textos tengan un espacio en el cual distribuirse*/
   height: 100%;
 
-  /* * Flexbox */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  /* * Grid */
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* grid-template-rows: repeat(3, 1fr); */
-  /* grid-template-rows: repeat(1fr 1fr); */
-  /* grid-template-rows: repeat(1fr auto); Esto no hace nada*/
-  /* grid-template-rows: 1fr auto; */
 }
 
 .banner {
@@ -97,16 +61,9 @@ body {
   background-size: cover;
   background-position: center center;
 
-  /* *Flexbox */
-  /* width: 30%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  /* * Grid */
-  /* display: grid; */
-  /* grid-template-rows: auto auto auto; */
-  /* align-items: center; */
 }
 
 .banner ul {
@@ -133,7 +90,7 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .contenedor {
+  .contenedor {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
@@ -157,7 +114,7 @@ body {
     font-size: 150%;
   }
 
-    .contenedor-conciertos {
+  .contenedor-conciertos {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -167,7 +124,7 @@ body {
 @media screen and (max-width: 700px) {
   .contenedor {
     display: grid;
-    grid-template-columns: 2fr 1fr ;
+    grid-template-columns: 2fr 1fr;
     gap: 20px;
 
     font-size: 150%;
