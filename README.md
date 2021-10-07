@@ -24,4 +24,4 @@ Con 600px:
 * [Para más información haga click aquí:][website] 
 
 [website]: https://www.youtube.com/watch?v=6qko7Nbe8YA&list=PLxKwsmCh0LszfursGLQbBoIoWvkGCLrqL&index=11
-! https://www.youtube.com/watch?v=6qko7Nbe8YA&list=PLxKwsmCh0LszfursGLQbBoIoWvkGCLrqL&index=11
+https://www.youtube.com/watch?v=6qko7Nbe8YA&list=PLxKwsmCh0LszfursGLQbBoIoWvkGCLrqL&index=11
