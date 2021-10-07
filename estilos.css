@@ -8,6 +8,10 @@ body {
   background: #1d202b;
   color: #fff;
   font-family: 'Roboto', sans-serif;
+
+  /* Practica: Se debe poder centrar todo el contenido del elemento contenedor para que quede en el centro de la página. */
+  min-height: 100vh;
+  display: flex;
 }
 
 .contenedor {
@@ -25,7 +29,7 @@ body {
   /* * Grid */
   display: grid;
   /* grid-template-columns: 1fr 1fr; */
-  grid-template-columns: 1fr auto;
+  /* grid-template-columns: 1fr auto; */
   grid-template-columns: 3fr 1fr;
   /* * Recomendación: Usar css-grid para realizar la esctructura (filas, columnas, grilla) de la página y flexbox para alinear elementos (elementos y espaciado de cajas dentro de esos elementos) */
   gap: 20px;
@@ -74,8 +78,8 @@ body {
 
   /* * Flexbox */
   display: flex;
-	flex-direction: column;
-	justify-content: space-between;	
+  flex-direction: column;
+  justify-content: space-between;
 
   /* * Grid */
   /* display: grid; */
@@ -95,12 +99,11 @@ body {
 
   /* *Flexbox */
   /* width: 30%; */
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;	
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-
-	  /* * Grid */
+  /* * Grid */
   /* display: grid; */
   /* grid-template-rows: auto auto auto; */
   /* align-items: center; */
@@ -130,10 +133,60 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+    .contenedor {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+
+    font-size: 150%;
+  }
+
+  .contenedor-conciertos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    font-size: 150%;
+  }
+
+    .contenedor-conciertos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    gap: 20px;
+
+    font-size: 150%;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .contenedor {
+    display: grid;
+    /* grid-template-columns: auto; */
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contenedor {
+    font-size: 150%;
+  }
 }
